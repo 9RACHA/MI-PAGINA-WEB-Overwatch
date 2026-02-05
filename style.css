@@ -1,0 +1,447 @@
+/* ===================================================== */
+/* 1. FUENTE GAMER */
+/* Importamos la fuente Orbitron desde Google Fonts     */
+/* Se usará para títulos y elementos destacados         */
+/* ===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+
+/* ===================================================== */
+/* 2. RESET Y CONFIGURACIÓN BASE */
+/* Eliminamos estilos por defecto del navegador          */
+/* y aseguramos un comportamiento consistente            */
+/* ===================================================== */
+* {     /* Selecciona todos los elementos */
+    box-sizing: border-box; /* El ancho incluye padding y borde */
+    margin: 0;              /* Quitamos márgenes automáticos */
+    padding: 0;             /* Quitamos rellenos automáticos */
+}
+
+/* Estilo base del cuerpo del documento */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente principal */
+    background-color: #0f1218; /* Fondo oscuro estilo gamer */
+    color: white;              /* Color de texto por defecto */
+    line-height: 1.6;          /* Altura de línea cómoda para leer */
+}
+
+
+/* ===================================================== */
+/* 3. CABECERA PRINCIPAL */
+/* Contiene logo, título y menú de navegación             */
+/* ===================================================== */
+.cabecera-principal {
+    background-color: #1a2333; /* Fondo del header */
+    display: flex;             /* Coloca elementos en fila */
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center;       /* Centrado vertical */
+    padding: 15px 5%;          /* Espaciado interno */
+    border-bottom: 3px solid #f99e1a; /* Línea inferior naranja */
+    position: sticky;          /* Se queda fija arriba al hacer scroll */
+    top: 0;
+    z-index: 1000;             /* Se superpone al resto del contenido */
+}
+
+
+/* ===================================================== */
+/* 4. LOGO Y TÍTULO */
+/* Agrupa la imagen del logo y el nombre de la web        */
+/* ===================================================== */
+.logo-contenedor { /* Contenedor del logo y título */
+    display: flex;       /* Logo e h1 en la misma línea */
+    align-items: center; /* Alineación vertical perfecta */
+    gap: 15px;           /* Espacio entre imagen y texto */
+}
+
+/* Imagen del logo */
+.logo-img { /* Estilo del logo */
+    height: 70px;        /* Tamaño del logo */
+    width: auto;        /* Mantiene proporciones */
+    border-radius: 50%;  /* Forma circular si la imagen es cuadrada */
+    object-fit: cover;   /* Evita deformaciones */
+    filter: drop-shadow(0 0 8px rgba(249, 158, 26, 0.6)); /* Brillo naranja */
+    transition: transform 0.3s ease; /* Animación suave */
+}
+
+/* Efecto al pasar el ratón por el logo */
+.logo-img:hover { /* Efecto hover */
+    transform: scale(1.1) rotate(5deg); /* Aumenta tamaño y rota ligeramente */
+}
+
+/* Texto "OVERWATCH MARKET" */
+.titulo-web { /* Estilo del título */
+    font-family: 'Orbitron', sans-serif; /* Fuente gamer */
+    color: #ffa200;              /* Color blanco */
+    font-size: 1.8rem;          /* Tamaño grande */
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 2px;       /* Separación entre letras */
+    margin: 0;                 /* Evita desplazamientos */
+}
+
+
+/* ===================================================== */
+/* 5. MENÚ DE NAVEGACIÓN */
+/* Lista de enlaces principales                           */
+/* ===================================================== */
+.menu-navegacion {  /* Contenedor del menú */
+    list-style: none;  /* Quitamos puntos de lista */
+    display: flex;     /* Enlaces en fila */
+    gap: 25px;         /* Separación entre enlaces */
+}
+
+/* Enlaces del menú */
+.menu-navegacion a {    /* Estilo de los enlaces */
+    color: rgb(255, 128, 0);            /* Color blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;      /* Negrita */
+    text-transform: uppercase;  /* Mayúsculas */
+    font-size: 0.9rem;     /* Tamaño legible */
+    transition: 0.3s;       /* Suaviza hover */
+}
+
+/* Cambio de color al pasar el ratón */
+.menu-navegacion a:hover {
+    color: #f99e1a;
+}
+
+
+/* ===================================================== */
+/* 6. BOTÓN HAMBURGUESA */
+/* Solo visible en dispositivos móviles                   */
+/* ===================================================== */
+.menu-boton {   /* Contenedor del botón */
+    display: none;        /* Oculto en escritorio */
+    background: none;   /* Fondo transparente */
+    border: none;   /* Sin borde */
+    cursor: pointer;    /* Manita al pasar por encima */
+    flex-direction: column; /* Barras una debajo de otra */
+    gap: 5px;       /* Espacio entre barras */
+}
+
+/* Cada barra del icono hamburguesa */
+.menu-boton .bar { /* Estilo de las barras */
+    width: 30px; /* Ancho de la barra */        
+    height: 4px;    /* Alto de la barra */     
+    background-color: #f99e1a;  /* Color naranja */
+    border-radius: 2px;      /* Bordes redondeados */
+}
+
+
+/* ===================================================== */
+/* 7. SECCIONES GENERALES */
+/* Estilo común para todas las secciones                  */
+/* ===================================================== */
+section {   /* Estilo base de secciones */
+    padding: 60px 5%;        /* Espacio interno */
+    margin: 20px auto;       /* Separación entre secciones */
+    max-width: 1200px;       /* Evita líneas demasiado largas */
+    background: #1e2533;     /* Fondo de sección */
+    border-radius: 15px;     /* Bordes redondeados */
+}
+
+/* Estilo común para títulos */
+h1, h2, h3 {    /* Estilo de títulos */
+    color: #f99e1a;                /* Color Overwatch */
+    font-family: 'Orbitron', sans-serif;    /* Fuente gamer */
+    margin-bottom: 25px;      /* Espacio debajo */
+    text-align: center;         /* Centrado */
+}
+
+
+/* ===================================================== */
+/* 8. BOTONES DE ACCIÓN */
+/* Botones grandes tipo CTA                               */
+/* ===================================================== */
+.boton-accion { /* Estilo del botón */
+    display: inline-block; /* Permite centrado */
+    background-color: #f06414;  /* Color naranja vibrante */
+    color: white !important;    /* Texto blanco OBLIGATORIO */ 
+    padding: 15px 30px; /* Espaciado interno */
+    text-decoration: none;   /* Sin subrayado */
+    border-radius: 5px;      /* Bordes redondeados */
+    font-weight: bold;    /* Negrita */
+    text-transform: uppercase;  /* Mayúsculas */
+    transition: 0.3s;       /* Suaviza hover */
+    margin: 20px auto;   /* Espacio arriba y abajo */
+    width: auto;       /* Ancho automático */
+}
+
+/* Efecto hover del botón */
+.boton-accion:hover {   /* Efecto al pasar el ratón */
+    background-color: #ff8c00;  /* Naranja más claro */
+    transform: translateY(-3px) scale(1.05);    /* Levanta y agranda */
+    box-shadow: 0 5px 15px rgba(240, 100, 20, 0.4); /* Sombra */
+}
+
+
+/* ===================================================== */
+/* 9. SECCIONES CON CONTENIDO CENTRADO */
+/* ===================================================== */
+.seccion-presentacion,  /* Sección de presentación */
+.seccion-winrate {  /* Sección de winrate */
+    text-align: center; /* Centrado de texto */
+    padding: 40px 5%;   /* Espaciado interno */
+}
+
+
+/* ===================================================== */
+/* 10. CATÁLOGO DE CUENTAS */
+/* Tarjetas de compra/venta                               */
+/* ===================================================== */
+.contenedor-tarjetas {  /* Contenedor de tarjetas */
+    display: flex;          /* Usamos flexbox */
+    justify-content: center;    /* Centrado horizontal */
+    gap: 25px;          /* Espacio entre tarjetas */
+    flex-wrap: wrap; /* Baja a otra fila si no caben */
+}
+
+/* Tarjeta individual */
+.tarjeta-producto { /* Estilo de la tarjeta */
+    background: #ffffff;    /* Fondo blanco */
+    color: #333;        /* Texto oscuro */
+    border-radius: 15px;    /* Bordes redondeados */
+    padding: 20px;      /* Espaciado interno */
+    width: 300px;     /* Ancho fijo */
+    text-align: center;  /* Centrado de texto */
+    transition: 0.3s;       /* Suaviza hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);    /* Sombra */
+}
+
+/* Efecto elevación */
+.tarjeta-producto:hover {   /* Efecto al pasar el ratón */
+    transform: translateY(-10px);   /* Eleva la tarjeta */
+}
+
+/* Imagen dentro de la tarjeta */
+.tarjeta-producto img { /* Estilo de la imagen */
+    width: 100%;       /* Ocupa todo el ancho */
+    border-radius: 10px;    /* Bordes redondeados */
+    margin-bottom: 15px;    /* Espacio debajo */
+}
+
+/* Botón de ver detalles */
+.btn-repo { /* Estilo del botón */
+    display: inline-block;  /* Permite centrado */
+    background-color: #2563eb;  /* Color azul */
+    color: white !important;    /* Texto blanco OBLIGATORIO */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none;  /* Sin subrayado */
+    border-radius: 5px;     /* Bordes redondeados */
+    font-weight: bold;   /* Negrita */
+}
+
+
+/* ===================================================== */
+/* 11. WINRATE */
+/* Barras de progreso de héroes                           */
+/* ===================================================== */
+.skill {    /* Contenedor de cada habilidad */
+    width: 100%;      /* Ocupa todo el ancho */
+    max-width: 800px;   /* Ancho máximo */
+    margin: 20px auto;  /* Centrado con margen */
+    text-align: left;   /* Alineación izquierda */
+}
+
+/* Nombre del héroe */
+.skill-name {   /* Estilo del nombre */
+    font-weight: bold;    /* Negrita */
+    color: #f99e1a;           /* Color Overwatch */
+    margin-bottom: 8px;  /* Espacio debajo */
+    display: block;    /* Bloque para separar del progreso */
+}
+
+/* Fondo de la barra */
+.progress-bar {   /* Contenedor de la barra */
+    background-color: #333;  /* Fondo oscuro */
+    border-radius: 10px;    /* Bordes redondeados */
+    height: 20px;      /* Altura de la barra */
+    width: 100%;    /* Ancho completo */
+    overflow: hidden;   /* Recorta contenido desbordado */
+}
+
+/* Barra de progreso */
+.progress {   /* Estilo de la barra */
+    background-color: #4483eb;  /* Color azul */
+    height: 100%;   /* Ocupa toda la altura */
+    border-radius: 10px;    /* Bordes redondeados */
+    transition: width 1s ease-in-out;   /* Animación suave */
+    animation: cargaBarra 1.5s ease-out;
+}
+
+/* Variante roja para bajo winrate */
+.progress.rojo {    /* Barra roja */
+    background-color: #a82525;  /* Color rojo */
+}
+
+
+/* ===================================================== */
+/* 12. VIDEOS Y RESEÑAS */
+/* ===================================================== */
+.contenedor-videos, /* Contenedor de vídeos */
+.contenedor-resenas {   /* Contenedor de reseñas */
+    display: flex;        /* Usamos flexbox */
+    justify-content: center;       /* Centrado horizontal */
+    gap: 20px;        /* Espacio entre tarjetas */
+    flex-wrap: wrap;    /* Baja a otra fila si no caben */
+}
+
+/* Tarjetas de vídeo y opinión */
+.tarjeta-video,  /* Tarjeta de vídeo */
+.tarjeta-resena {   /* Tarjeta de reseña */
+    background: #28354f;    /* Fondo azul oscuro */
+    border-radius: 12px;    /* Bordes redondeados */
+    padding: 20px;    /* Espaciado interno */
+    flex: 1 1 300px;    /* Flexible con ancho mínimo */
+    max-width: 450px;   /* Ancho máximo */
+    border-bottom: 5px solid #f99e1a;   /* Línea inferior naranja */
+}
+
+/* --- TARJETAS DE RESEÑAS PULIDAS --- */
+.tarjeta-resena {
+    background: #28354f;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 15px;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease;
+    /* Quitamos el border-bottom anterior para usar el lateral */
+    border: none; 
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.tarjeta-resena:hover {
+    transform: scale(1.03);
+}
+
+/* Estilo Gamer para el Nombre de Usuario */
+.usuario {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Estrellas en color dorado/amarillo */
+.estrellas {
+    color: #f99e1a;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Bordes laterales por categoría */
+.tarjeta-resena.excelente {
+    border-left: 5px solid #4483eb; /* Azul para 5 estrellas */
+}
+
+.tarjeta-resena.bueno {
+    border-left: 5px solid #f06414; /* Naranja para 4 estrellas */
+}
+
+.comentario {
+    font-style: italic;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+/* Contenedor responsive para iframe */
+.video-responsive { /* Contenedor adaptativo */
+    position: relative; /* Posicionamiento relativo */
+    padding-bottom: 56.25%; /* Relación 16:9 */
+    height: 0;          /* Altura 0 */
+    overflow: hidden;   /* Recorta contenido desbordado */
+    border-radius: 8px;   /* Bordes redondeados */
+}
+
+/* Iframe adaptativo */
+.video-responsive iframe {  /* Estilo del iframe */
+    position: absolute; /* Posicionamiento absoluto */
+    inset: 0;        /* Ocupa todo el contenedor */
+    width: 100%;    /* Ancho completo */
+    height: 100%;   /* Altura completa */
+}
+
+
+/* ===================================================== */
+/* 13. FOOTER */
+/* ===================================================== */
+.pie-pagina {   /* Estilo del footer */
+    background-color: #1a2333;  /* Fondo del footer */
+    padding: 50px 20px;      /* Espaciado interno */
+    text-align: center;    /* Centrado de texto */
+    border-top: 5px solid #f99e1a;  /* Línea superior naranja */
+}
+
+/* Redes sociales */
+.redes-sociales {   /* Contenedor de redes sociales */
+    display: flex;  /* Usamos flexbox */
+    justify-content: center;    /* Centrado horizontal */
+    gap: 60px;  /* Espacio entre iconos */
+    margin-top: 25px;   /* Espacio arriba */
+}
+
+.enlace-social {    /* Estilo de cada enlace social */
+    color: white;         /* Color blanco */
+    text-decoration: none;  /* Sin subrayado */
+    display: flex;      /* Usamos flexbox */
+    flex-direction: column; /* Icono encima del texto */
+    align-items: center;    /* Centrado */
+}
+
+.logo-social {  /* Estilo del icono social */
+    height: 50px;       /* Tamaño del icono */
+    margin-bottom: 10px;    /* Espacio debajo del icono */
+}
+
+
+/* ===================================================== */
+/* 14. RESPONSIVE */
+/* ===================================================== */
+@media (max-width: 768px) { /* Pantallas pequeñas */
+
+    /* Muestra el botón hamburguesa */
+    .menu-boton {   /* Estilo del botón */
+        display: flex;      /* Visible en móvil */
+    }
+
+    /* Menú desplegable */
+    .menu {  /* Estilo del menú */
+        display: none;    /* Oculto por defecto */
+        position: absolute; /* Posición absoluta */
+        top: 100%;  /* Justo debajo del header */
+        left: 0;    /* Alineado a la izquierda */
+        width: 100%;    /* Ancho completo */
+        background-color: #1a2333;  /* Fondo del menú */
+        padding: 30px;   /* Espaciado interno */
+        border-bottom: 4px solid #f99e1a;   /* Línea inferior naranja */
+    }
+
+    /* Menú activo */
+    .menu.menu-activo {  /* Estilo del menú activo */
+        display: block !important;  /* Visible cuando está activo */
+    }
+
+    /* Menú en columna */
+    .menu-navegacion {  /* Estilo del menú */
+        flex-direction: column; /* Enlaces en columna */
+        align-items: center;    /* Centrado */
+        gap: 25px;       /* Espacio entre enlaces */
+    }
+}
+
+/* Ajustes para móviles pequeños */
+@media (max-width: 480px) { /* Pantallas muy pequeñas */
+    .titulo-web {   /* Estilo del título */
+        font-size: 1.2rem;        /* Tamaño más pequeño */
+    }
+
+    .logo-img {  /* Estilo del logo */
+        height: 50px;    /* Tamaño más pequeño */
+    }
+}
+
+@keyframes cargaBarra {     /* Animación de carga de barra */
+    from { width: 0; }  /* Comienza en 0 */
+}

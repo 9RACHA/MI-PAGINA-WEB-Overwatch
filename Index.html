@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Adaptación a dispositivos móviles -->
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Overwatch Market</title>
+
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="style.css"> <!-- Vinculación al archivo CSS -->
+</head>
+<body>
+
+    <!-- ===================== -->
+    <!-- CABECERA PRINCIPAL -->
+    <!-- ===================== -->
+    <header class="cabecera-principal">     <!-- Cabecera principal -->
+
+        <!-- Contenedor del logo y título -->
+        <div class="logo-contenedor">   <!-- Contenedor del logo -->
+            <!-- Imagen del logo -->
+            <img src="IMG/LOGO.png" alt="Logo Overwatch Market" class="logo-img"> <!-- Logo de la web -->
+
+            <!-- Nombre de la web -->
+            <h1 class="titulo-web">OVERWATCH MARKET</h1>
+        </div>
+
+        <!-- Botón hamburguesa para el menú en móvil -->
+        <button class="menu-boton" aria-label="Abrir menú"> <!-- Botón del menú -->
+            <span class="bar"></span>   <!-- Barras del botón -->
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Menú de navegación principal -->
+        <nav class="menu">  <!-- Menú de navegación -->
+            <ul class="menu-navegacion">    <!-- Lista de enlaces -->
+                <li><a href="#inicio">Inicio</a></li>   <!-- Enlace a la sección de inicio -->
+                <li><a href="#cuentas">Cuentas</a></li>
+                <li><a href="#winrate">Winrate</a></li>
+                <li><a href="#opiniones">Opiniones</a></li>
+                <li><a href="#jugadas">Jugadas</a></li>
+            </ul>   
+        </nav>  
+    </header>   
+
+    <!-- ===================== -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <!-- ===================== -->
+    <main>
+
+        <!-- Sección de presentación -->
+        <section id="inicio" class="seccion-presentacion">  <!-- Sección de inicio -->
+            <h1>Compra y venta de cuentas Overwatch</h1>    
+            <p>
+                Plataforma para compra y venta de cuentas, clasificadas por rango,
+                con opiniones reales de la comunidad, disponible para PS5, Xbox y PC.
+            </p>
+
+            <!-- Enlace externo a la web oficial -->
+            <a href="https://overwatch.blizzard.com/" class="boton-accion" target="_blank"> <!-- Botón de llamada a la acción -->
+                Web Oficial
+            </a>
+        </section>
+
+        <!-- ===================== -->
+        <!-- SECCIÓN CUENTAS -->
+        <!-- ===================== -->
+        <section id="cuentas" class="seccion-cuentas">  <!-- Sección de cuentas -->
+            <h2>Catálogo de cuentas disponibles</h2>    
+
+            <!-- Contenedor de tarjetas de productos -->
+            <div class="contenedor-tarjetas">   <!-- Contenedor de tarjetas -->
+
+                <!-- Tarjeta rango Platino -->
+                <article class="tarjeta-producto">  <!-- Tarjeta de producto -->
+                    <img src="IMG/plat.png" alt="Cuenta Rango Platino"> <!-- Imagen del producto -->
+                    <h3>Rango Platino</h3>
+                    <p>Cuenta ideal para empezar en el mundo competitivo sin presiones.</p>
+                    <div class="botones-tarjeta">   <!-- Contenedor de botones -->
+                        <a href="IMG/platino.png" target="_blank" class="btn-repo">Ver detalles</a> <!-- Botón de detalles -->
+                    </div>
+                </article>  
+
+                <!-- Tarjeta rango Master -->
+                <article class="tarjeta-producto">  
+                    <img src="IMG/MASTER.png" alt="Cuenta Rango Master">
+                    <h3>Rango Master</h3>
+                    <p>Alto nivel de juego. Incluye skins legendarias de la temporada actual.</p>
+                    <div class="botones-tarjeta">
+                        <a href="IMG/smurf.png" target="_blank" class="btn-repo">Ver detalles</a>   
+                    </div>
+                </article>
+
+                <!-- Tarjeta rango Gran Maestro -->
+                <article class="tarjeta-producto">
+                    <img src="IMG/Gran.png" alt="Cuenta Rango Gran Maestro">
+                    <h3>Gran Maestro</h3>
+                    <p>Solo para jugadores expertos. Acceso directo al top regional.</p>
+                    <div class="botones-tarjeta">
+                        <a href="IMG/Micuenta.png" target="_blank" class="btn-repo">Ver detalles</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- SECCIÓN OPINIONES -->
+        <!-- ===================== -->
+        <section id="opiniones" class="seccion-resenas">    
+            <h2>Opiniones de la Comunidad</h2>
+
+            <!-- Contenedor de reseñas -->
+            <div class="contenedor-resenas">
+
+                <!-- Reseña 1 -->
+                <div class="contenedor-resenas">
+    <article class="tarjeta-resena excelente">
+        <h3 class="usuario">CULPA_DE_FALETE</h3>
+        <div class="estrellas">★★★★★</div>
+        <p class="comentario">"Compre la cuenta de master y me encantó, me ahorró mucho tiempo."</p>
+    </article>
+
+                <!-- Reseña 2 -->
+                <article class="tarjeta-resena bueno">
+        <h3 class="usuario">DOOMFIST_GALLEGO</h3>
+        <div class="estrellas">★★★★☆</div>
+        <p class="comentario">"VENDI LA CUENTA EN TOP 500 Y EL DINERO LLEGO AL MOMENTO"</p>
+    </article>
+
+                <!-- Reseña 3 -->
+               <article class="tarjeta-resena excelente">
+        <h3 class="usuario">RACHA9</h3>
+        <div class="estrellas">★★★★★</div>
+        <p class="comentario">"La mejor plataforma para comprar cuentas de Overwatch."</p>
+    </article>
+
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- SECCIÓN WINRATE -->
+        <!-- ===================== -->
+        <section id="winrate" class="seccion-winrate">  
+            <h2>Winrate de héroes</h2>
+
+            <!-- Enlace a estadísticas oficiales -->
+            <a href="https://overwatch.blizzard.com/es-es/rates/?input=PC&map=all-maps&region=Europe&role=All&rq=0&tier=All" class="boton-accion" target="_blank">  
+                Estadísticas Oficiales
+            </a>
+
+            <!-- Héroes con mayor winrate -->
+            <h3>Héroes con Mayor Winrate</h3>
+
+            <div class="skill"> 
+                <span class="skill-name">DVA --> 63,3%</span>   
+                <div class="progress-bar">  
+                    <div class="progress" style="width: 63.3%"></div>   
+                </div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">Mauga --> 55,7%</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 55.7%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">Sigma --> 52,1%</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 52.1%"></div>
+                </div>
+            </div>
+
+            <!-- Héroes con menor winrate -->
+            <h3>Héroes con Menor Winrate</h3>
+
+            <div class="skill">
+                <span class="skill-name">Ramattra --> 42,1%</span>
+                <div class="progress-bar">
+                    <div class="progress rojo" style="width: 42.1%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">Zarya --> 43%</span>
+                <div class="progress-bar">
+                    <div class="progress rojo" style="width: 43%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">Doomfist --> 44.5%</span>
+                <div class="progress-bar">
+                    <div class="progress rojo" style="width: 44.5%"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- SECCIÓN JUGADAS -->
+        <!-- ===================== -->
+        <section id="jugadas" class="seccion-jugadas">
+            <h2>Jugadas Destacadas (POTG)</h2>
+            <h3>Revive los mejores momentos de la partida con estas jugadas épicas.</h3>
+
+            <!-- Contenedor de vídeos -->
+            <div class="contenedor-videos">
+
+                <!-- Vídeo 1 -->
+                <article class="tarjeta-video">
+                    <h3>Torbjorn - El enano cabreado</h3>
+                    <div class="video-responsive">
+                        <iframe src="VIDEO/HAMERTIME.mp4" title="Jugada Torbjorn" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="descripcion-video">
+                        Saco su martillo e hizo tiltarse al equipo enemigo.
+                    </p>
+                </article>
+
+                <!-- Vídeo 2 -->
+                <article class="tarjeta-video">
+                    <h3>POTGM - Genji sin aura</h3>
+                    <div class="video-responsive">
+                        <iframe src="VIDEO/DESTACADA.mp4" title="Jugada Genji" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="descripcion-video">
+                        La intención fue buena, la ejecución no tanto.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== -->
+    <!-- PIE DE PÁGINA -->
+    <!-- ===================== -->
+    <footer id="contacto" class="pie-pagina">   <!-- Pie de página -->
+        <div class="footer-contenido">  <!-- Contenido del pie de página -->
+
+            <!-- Texto legal -->
+            <p>&copy; 2026 Overwatch Fan Project - Creado por Miguel García Lázaro</p>
+
+            <!-- Enlaces a redes sociales -->
+            <div class="redes-sociales">
+
+                <a href="https://www.youtube.com/@Racha9" target="_blank" class="enlace-social">    
+                    <img src="IMG/YOU.png" alt="YouTube" class="logo-social">   
+                    <span>YouTube</span>
+                </a>
+
+                <a href="https://www.twitch.tv/RACHA9" target="_blank" class="enlace-social">
+                    <img src="IMG/TWITCH.png" alt="Twitch" class="logo-social">
+                    <span>Twitch</span>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script del menú hamburguesa -->
+    <script src="Hamburguesa.js"></script>  <!-- Vinculación al archivo JS -->
+</body>
+</html>
